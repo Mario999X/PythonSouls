@@ -1,4 +1,4 @@
-import pythonSouls.palacio as ar
+import pythonSouls.Palacio as ar
 
 juego = ar.Palacio()
 
