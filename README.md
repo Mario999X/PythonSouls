@@ -5,4 +5,8 @@ Se trata de un mini-juego por turnos, desarrollado con Python y manejado desde C
 ## La aplicación ofrece:
 
     1. ¿Un rato de entretenimiento?
-    2. Siempre se pueden modificar los stats de los personajes para así variar la dificultad y demás.
+    2. Jugabilidad simple pero exigente (y un poco de RNG)
+    3. Una mini-historia en tres capítulos diferentes:
+        4. Introducción
+        5. Palacio
+        6. Desafío (Próximamente)
