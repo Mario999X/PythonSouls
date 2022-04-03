@@ -12,11 +12,11 @@ class Desafio_Final:
         jugador.salud = 275
         jugador.aquellus = 5
         jugador.carga_arma = 15
-        jugador.damage = 20
+        jugador.damage = 21
 
         # PREPARACION ENEMIGO
         # NOMBRE, SALUD BASE, AQUELLUS, CARGA INICIAL, DAÑO BASE
-        boss_definitivo = Per.Personaje("Lar'guug, el hijo bastardo", 1000, 7, 20, 22)
+        boss_definitivo = Per.Personaje("Lar'guug, el hijo bastardo", 1000, 7, 20, 23)
 
         # PREPARACION DIALOGOS
         guiones_separacion = "-------------------------"
@@ -27,7 +27,7 @@ class Desafio_Final:
         guiones_sep_evento_batalla = "---------- EVENTO BATALLA ----------"
         golpe_rapido_acierto = "¡GOLPE DIRECTO!"
         minimo_cargas_jugador = "Necesitas el mínimo de cargas para lanzar un ataque especial. | Perdiste un turno"
-        minimo_cargas_enemigo = "El rival no tiene las cargas mínimas para lanzar un ataque especial: "
+        minimo_cargas_enemigo = "El rival no tiene las cargas mínimas para lanzar un ataque especial (30): "
         menu_jugador = """
         --- TURNO JUGADOR ---
         0.Rendirse
@@ -38,7 +38,7 @@ class Desafio_Final:
         5.Aquellus - Curación (+ 50 salud)
         Opción: """
         mostrar_turno = "TURNO: "
-        frase_intro_boss = boss_definitivo.nombre + ": Mi cuerpo aún debe acostumbrarse a la realidad, pero cuando lo haga, ¡moriras!"
+        frase_intro_boss = boss_definitivo.nombre + ": Mi cuerpo aún debe acostumbrarse a la realidad, pero cuando lo haga, ¡morirás!"
         turno_5_jugador = "¡Recogiste el anillo de tú hermana! | Ganas: "
         turno_10_boss = boss_definitivo.nombre + ": ¡Estoy entrando en forma! | Gana: "
         turno_15_boss = boss_definitivo.nombre + ": ¡No tienes ninguna oportunidad! | Gana: "
@@ -46,8 +46,8 @@ class Desafio_Final:
         turno_25_boss = boss_definitivo.nombre + ": ¡AHHHHHHHH! | Gana: "
         turno_30_jugador = "¡Notas el fragor de la batalla! | Ganas: "
         turno_40_jugador = "¡Preparas un golpe definitivo! | Carga Actual: "
-        frase_jugador = jugador.nombre + ": Alguien como tú no debería regresar del vacio..."
-        frase_muerte_boss = boss_definitivo.nombre + "Como... he acabado... ¿qué estás haciendo?... ¡no!..."
+        frase_jugador = jugador.nombre + ": Alguien como tú... ¡no debería regresar del vacio!"
+        frase_muerte_boss = boss_definitivo.nombre + ": Como... he acabado... ¿qué estás haciendo?... ¡no!..."
         turno_49_boss = boss_definitivo.nombre + ": ¡Demasiado tarde, preparate a morir!"
         frase_win = "El Usurpador usó rápidamente el alma maldita del hijo bastardo para revivir a su hermana y asi evitar cualquier tipo de resurreción.\n" \
                     "La paz de Pandora podrá ser mantenida, pero... ¿qué ocurrirá con el Usurpador?"
@@ -55,7 +55,7 @@ class Desafio_Final:
         boss_definitivo_sorpresa = boss_definitivo.nombre + ": ¡¿Has sido capaz de detener ese golpe?!...¡NO PIENSO PERDER!"
 
         print(guiones_separacion)
-        print("El Usurpador, tras escuchar los últimos lamentos de su moribunda hermana, supo el grave fallo que "
+        print("El Usurpador, tras escuchar los últimos lamentos de su moribunda hermana, supo el grave error que "
               "había cometido.\nHabía sido engañado por su hermano bastardo, creído muerto desde hace 5 años, "
               "y que usando el poder de la corona, ha sido capaz de revivir.\nLos recuerdos regresan al Usurpador, "
               "y recogiendo la espada de su hermana, se dispone a eliminar a su enemigo de una vez por todas.  ")
@@ -202,7 +202,7 @@ class Desafio_Final:
                             print(guiones_separacion)
                             print(mostrar_turno + str(num_turno))
                     elif movimiento_ia == 2:
-                        if boss_definitivo.carga_arma <= 30:
+                        if boss_definitivo.carga_arma < 30:
                             boss_definitivo.carga_arma = Op.suma_carga(boss_definitivo.carga_arma)
                             print(minimo_cargas_enemigo + str(boss_definitivo.carga_arma))
                             print("El Usurpador observa.")
