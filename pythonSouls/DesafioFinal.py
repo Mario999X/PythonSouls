@@ -130,7 +130,7 @@ class Desafio_Final:
                     print(frase_win_secreto)
                     print(guiones_separacion)
                     fin_partida = True
-                    break # COMPROBAR FUNCIONAMIENTO
+                    break
                 elif boss_definitivo.salud <= 0:
                     print("\n---------- FINAL ----------")
                     print(frase_muerte_boss)
