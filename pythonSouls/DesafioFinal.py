@@ -202,7 +202,7 @@ class Desafio_Final:
                             print(guiones_separacion)
                             print(mostrar_turno + str(num_turno))
                     elif movimiento_ia == 2:
-                        if boss_definitivo.carga_arma < 30:
+                        if boss_definitivo.carga_arma < 29:
                             boss_definitivo.carga_arma = Op.suma_carga(boss_definitivo.carga_arma)
                             print(minimo_cargas_enemigo + str(boss_definitivo.carga_arma))
                             print("El Usurpador observa.")
