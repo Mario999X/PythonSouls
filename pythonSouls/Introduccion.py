@@ -14,7 +14,7 @@ class Introduccion:
 
         # PREPARACION ENEMIGO
         # NOMBRE, SALUD BASE, AQUELLUS, CARGA INICIAL, DAÑO BASE
-        voz_desconocida = Per.Personaje("Espantapájaros", 50, 0, 0)
+        voz_desconocida = Per.Personaje("Espantapájaros", 75, 0, 0)
 
         # PREPARACION DIALOGOS
         guiones_separacion = "-------------------------"
@@ -28,7 +28,7 @@ class Introduccion:
             2.Espada - Ataque Especial (Mínimo 10 cargas + 10 daño adicional)
             3.Escudo - Defensa básica (Frente ataques rápidos)
             4.Escudo - Defensa específica (Frente ataques especiales, en caso de detener uno, -3 de salud)
-            5.Aquellus - Curación (+ 15 salud)
+            5.Aquellus - Curación (+ 50 salud)
             Opción: """
 
         voz_desconocida_intro = voz_desconocida.nombre + ": Hola " + jugador.nombre + ", conozco toda tu historia con " \
