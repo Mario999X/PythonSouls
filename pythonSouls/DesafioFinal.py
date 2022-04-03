@@ -122,7 +122,7 @@ class Desafio_Final:
                     print("Escoge una opción válida")
                     continue
                     # COMPROBACION DEL ESTADO DE LA BATALLA
-                if boss_definitivo.salud < 0 and boss_definitivo.salud < -15:
+                if boss_definitivo.salud < 0 and boss_definitivo.salud < -20:
                     print("\n---------- FINAL SECRETO ----------")
                     print(frase_jugador)
                     print(frase_muerte_boss_secreto)
@@ -204,7 +204,7 @@ class Desafio_Final:
                             print(guiones_separacion)
                             print(mostrar_turno + str(num_turno))
                     elif movimiento_ia == 2:
-                        if boss_definitivo.carga_arma < 30:
+                        if boss_definitivo.carga_arma < 29:
                             boss_definitivo.carga_arma = Op.suma_carga(boss_definitivo.carga_arma)
                             print(minimo_cargas_enemigo + str(boss_definitivo.carga_arma))
                             print("El Usurpador observa.")
