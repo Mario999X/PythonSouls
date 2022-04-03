@@ -100,7 +100,7 @@ class Introduccion:
                     enfrentamiento = 0
                     fin_partida = True
                 elif movimiento_jugador == 1:
-                    voz_desconocida.salud = Op.resta_salud_carga_jugador(voz_desconocida.salud, jugador.damage)
+                    voz_desconocida.salud = Op.resta_salud(voz_desconocida.salud, jugador.damage)
                     print(golpe_rapido_acierto)
                     print("Salud Rival: " + str(voz_desconocida.salud))
                     jugador.carga_arma = Op.suma_carga(jugador.carga_arma)
@@ -108,7 +108,7 @@ class Introduccion:
                     if jugador.carga_arma < 10:
                         print(voz_desconocida_tutorial_ataque_especial_fallido)
                     else:
-                        voz_desconocida.salud = Op.resta_salud(voz_desconocida.salud, jugador.carga_arma)
+                        voz_desconocida.salud = Op.resta_salud_carga_jugador(voz_desconocida.salud, jugador.carga_arma)
                         print(voz_desconocida_tutorial_ataque_especial_acierto)
                         print("Salud Rival: " + str(voz_desconocida.salud))
                         jugador.carga_arma = 5
