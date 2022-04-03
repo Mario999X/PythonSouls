@@ -153,7 +153,7 @@ class Palacio:
                             print(golpe_rapido_acierto + "\nSalud del Usurpador: " + str(jugador.salud))
                             enemigo_uno.carga_arma = Op.suma_carga(enemigo_uno.carga_arma)
                     elif movimiento_ia == 2:
-                        if enemigo_uno.carga_arma < 10:
+                        if enemigo_uno.carga_arma < 9:
                             enemigo_uno.carga_arma = Op.suma_carga(enemigo_uno.carga_arma)
                             print(minimo_cargas_enemigo + str(
                                 enemigo_uno.carga_arma))
@@ -251,7 +251,7 @@ class Palacio:
                             print(golpe_rapido_acierto + "\nSalud del usurpador: " + str(jugador.salud))
                             boss.carga_arma = Op.suma_carga(boss.carga_arma)
                     elif movimiento_ia == 2:
-                        if boss.carga_arma < 10:
+                        if boss.carga_arma < 9:
                             boss.carga_arma = Op.suma_carga(boss.carga_arma)
                             print(minimo_cargas_enemigo + str(boss.carga_arma))
                             print("El Usurpador observa.")
