@@ -35,7 +35,7 @@ class Palacio:
         2.Espada - Ataque Especial (Mínimo 10 cargas + 10 daño adicional)
         3.Escudo - Defensa básica (Frente ataques rápidos)
         4.Escudo - Defensa específica (Frente ataques especiales, en caso de detener uno, -3 de salud)
-        5.Aquellus - Curación (+ 15 salud)
+        5.Aquellus - Curación (+ 50 salud)
         Opción: """
         frase_huida_jugador = "El Usurpador huye del combate"
         frase_derrota_jugador = "--- NO HAS CUMPLIDO TÚ OBJETIVO ---"
