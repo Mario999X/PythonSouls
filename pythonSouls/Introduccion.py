@@ -35,8 +35,8 @@ class Introduccion:
                                                                                       "la familia real... noto tu sed " \
                                                                                       "de sangre,\nhe decidido " \
                                                                                       "prepararte para " \
-                                                                                      "tu cometido.\nMe presento en " \
-                                                                                      "forma de espantapájaros para " \
+                                                                                      "tu cometido.\nMe presento de " \
+                                                                                      "esta forma para " \
                                                                                       "que entrenes usándome,\nno te " \
                                                                                       "preocupes, tus golpes no me " \
                                                                                       "harán mucho daño."
