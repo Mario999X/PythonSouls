@@ -42,7 +42,7 @@ class Introduccion:
                                                                                       "harán mucho daño."
         voz_desconocida_tutorial = voz_desconocida.nombre + ": Usa las técnicas que prefieras hasta destruir este cuerpo inerte."
 
-        voz_desconocida_tutorial_ataque_especial_fallido = voz_desconocida.nombre + ": Necesitaras un mínimo de " \
+        voz_desconocida_tutorial_ataque_especial_fallido = voz_desconocida.nombre + ": Necesitarás un mínimo de " \
                                                                                     "cargas para lanzar un ataque " \
                                                                                     "especial. "
         voz_desconocida_tutorial_ataque_especial_acierto = voz_desconocida.nombre + ": Acertaste, esto reduce tu " \
