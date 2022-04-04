@@ -26,7 +26,7 @@ class Desafio_Final:
         guiones_sep_ene_accion = "------------ ACCIÓN ENEMIGO -------------"
         guiones_sep_evento_batalla = "---------- EVENTO BATALLA ----------"
         golpe_rapido_acierto = "¡GOLPE DIRECTO!"
-        minimo_cargas_jugador = "Necesitas el mínimo de cargas para lanzar un ataque especial. | Perdiste un turno"
+        minimo_cargas_jugador = "Necesitás el mínimo de cargas para lanzar un ataque especial. | Perdiste un turno"
         minimo_cargas_enemigo = "El rival no tiene las cargas mínimas para lanzar un ataque especial (30): "
         menu_jugador = """
         --- TURNO JUGADOR ---
@@ -122,7 +122,7 @@ class Desafio_Final:
                     print("Escoge una opción válida")
                     continue
                     # COMPROBACION DEL ESTADO DE LA BATALLA
-                if boss_definitivo.salud < 0 and boss_definitivo.salud < -20:
+                if boss_definitivo.salud < 0 and boss_definitivo.salud < -35:
                     print("\n---------- FINAL SECRETO ----------")
                     print(frase_jugador)
                     print(frase_muerte_boss_secreto)
@@ -160,7 +160,7 @@ class Desafio_Final:
                     print(turno_20_jugador + "\n-Salud Actual: " + str(jugador.salud) + "\n-Daño Actual: " + str(jugador.damage))
                 elif num_turno == 25:
                     boss_definitivo.damage = boss_definitivo.damage + 5
-                    boss_definitivo.salud = boss_definitivo.salud + 50
+                    boss_definitivo.salud = boss_definitivo.salud + 25
                     print(guiones_sep_evento_batalla)
                     print(turno_25_boss + "\n-Salud Actual: " + str(boss_definitivo.salud) + "\n-Daño Atual: " + str(boss_definitivo.damage))
                 elif num_turno == 30:
