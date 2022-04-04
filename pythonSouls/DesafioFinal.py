@@ -51,7 +51,7 @@ class Desafio_Final:
         frase_muerte_boss_secreto = boss_definitivo.nombre + ": Como... he acabado... ¿qué estás haciendo?... ¡no!..."
         turno_49_boss = boss_definitivo.nombre + ": ¡Demasiado tarde, preparate a morir!"
         frase_win = "El Usurpador logró terminar con una amenaza inminente, pero su hermana sigue muerta y la paz en Pandora no esta garantizada..."
-        frase_win_secreto = "El Usurpador, con el poder de la espada familiar, usó rápidamente el alma maldita del hijo bastardo para revivir a su hermana y asi evitar cualquier tipo de resurreción.\n" \
+        frase_win_secreto = "El Usurpador, con el poder de la espada familiar, usó rápidamente el alma maldita del hijo bastardo para revivir a su hermana y así evitar cualquier tipo de resurreción.\n" \
                     "La paz de Pandora podrá ser mantenida, pero... ¿qué ocurrirá con el Usurpador?"
         frase_derrota = boss_definitivo.nombre + ": Antes de morir, quiero que sepas que fuiste un gran peón, pero...¡Pandora es mia!"
         boss_definitivo_sorpresa = boss_definitivo.nombre + ": ¡¿Has sido capaz de detener ese golpe?!...¡NO PIENSO PERDER!"
@@ -122,7 +122,7 @@ class Desafio_Final:
                     print("Escoge una opción válida")
                     continue
                     # COMPROBACION DEL ESTADO DE LA BATALLA
-                if boss_definitivo.salud < 0 and boss_definitivo.salud < -35:
+                if boss_definitivo.salud < -35:
                     print("\n---------- FINAL SECRETO ----------")
                     print(frase_jugador)
                     print(frase_muerte_boss_secreto)
