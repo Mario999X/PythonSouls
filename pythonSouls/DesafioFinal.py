@@ -122,7 +122,7 @@ class Desafio_Final:
                     print("Escoge una opción válida")
                     continue
                     # COMPROBACION DEL ESTADO DE LA BATALLA
-                if boss_definitivo.salud < -35:
+                if boss_definitivo.salud <= -35:
                     print("\n---------- FINAL SECRETO ----------")
                     print(frase_jugador)
                     print(frase_muerte_boss_secreto)
