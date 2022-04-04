@@ -9,7 +9,7 @@ class Desafio_Final:
         # PREPARACION JUGADOR
         jugador = Per.Personaje()
         jugador.nombre = input("Introduce el nombre del Usurpador: ")
-        jugador.salud = 300
+        jugador.salud = 400
         jugador.aquellus = 5
         jugador.carga_arma = 15
         jugador.damage = 21
