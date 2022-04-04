@@ -9,7 +9,7 @@ class Desafio_Final:
         # PREPARACION JUGADOR
         jugador = Per.Personaje()
         jugador.nombre = input("Introduce el nombre del Usurpador: ")
-        jugador.salud = 275
+        jugador.salud = 300
         jugador.aquellus = 5
         jugador.carga_arma = 15
         jugador.damage = 21
@@ -47,7 +47,7 @@ class Desafio_Final:
         turno_30_jugador = "¡Notas el fragor de la batalla! | Ganas: "
         turno_40_jugador = "¡Preparas un golpe definitivo! | Carga Actual: "
         frase_jugador = jugador.nombre + ": Alguien como tú... ¡no debería regresar del vacio!"
-        frase_muerte_boss = "Te he subestimado... encontrare la forma de regresar... y entonces... "
+        frase_muerte_boss = boss.nombre + ": Te he subestimado... encontrare la forma de regresar... y entonces... "
         frase_muerte_boss_secreto = boss_definitivo.nombre + ": Como... he acabado... ¿qué estás haciendo?... ¡no!..."
         turno_49_boss = boss_definitivo.nombre + ": ¡Demasiado tarde, preparate a morir!"
         frase_win = "El Usurpador logró terminar con una amenaza inminente, pero su hermana sigue muerta y la paz en Pandora no esta garantizada..."
