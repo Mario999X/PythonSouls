@@ -26,7 +26,7 @@ class Palacio:
         guiones_sep_enemigo = "------------ DETALLES ENEMIGO -------------"
         guiones_sep_ene_accion = "------------ ACCIÓN ENEMIGO -------------"
         golpe_rapido_acierto = "¡GOLPE DIRECTO!"
-        minimo_cargas_jugador = "Necesitas el mínimo de cargas para lanzar un ataque especial. | Perdiste un turno"
+        minimo_cargas_jugador = "Necesitás el mínimo de cargas para lanzar un ataque especial. | Perdiste un turno"
         minimo_cargas_enemigo = "El rival no tiene las cargas mínimas para lanzar un ataque especial: "
         menu_jugador = """
         --- TURNO JUGADOR ---
